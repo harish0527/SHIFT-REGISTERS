@@ -1,0 +1,13 @@
+module siso(a,y,clk,rst);
+input a;
+input clk,rst;
+output y;
+wire w1,w2,w3;
+
+//dff(d,y,clk,rst);
+dff d1(a,w1,clk,rst);
+dff d2(w1,w2,clk,rst);
+dff d3(w2,w3,clk,rst);
+dff d4(w3,y,clk,rst);
+
+endmodule
