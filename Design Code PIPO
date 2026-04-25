@@ -1,0 +1,12 @@
+module pipo(a1,a2,a3,a4,y1,y2,y3,y4,clk,rst);
+input a1,a2,a3,a4;
+output y1,y2,y3,y4;
+input clk,rst;
+
+
+//dff(d,y,clk,rst);
+dff d5(a1,y1,clk,rst);
+dff d6(a2,y2,clk,rst);
+dff d7(a3,y3,clk,rst);
+dff d8(a4,y4,clk,rst);
+endmodule
